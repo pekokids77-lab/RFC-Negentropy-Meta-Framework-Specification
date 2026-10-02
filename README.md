@@ -1,0 +1,1 @@
+# RFC-Negentropy-Meta-Framework-Specification
