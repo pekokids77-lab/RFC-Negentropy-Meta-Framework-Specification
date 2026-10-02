@@ -105,9 +105,8 @@
 **核心無窮阻抗吸引區** (∇Z → ∞)：屬於貫穿軸心（如 SSCM 的 IVCC、澳洲基建的 MPA 特許權、DOM 的核心治理邊界）[cite: 1, 2, 3]。
    具備絕對不可穿透性，任何微小侵入均會引發全系統級的強烈反撲或自毀式相變保護。   
 
-
 ---
 
-License
+**License
 
 This project is open-sourced under the MIT License. Anyone is free to use, modify, distribute, or commercialize this work, provided that the original author attribution and license terms are retained.
