@@ -127,6 +127,8 @@ opt
 
 核心無窮阻抗吸引區 (Z→∞)：貫穿系統幾何中心的奇異吸引子（如 SSCM 的 IVCC、實體基建的特許資產產權、DOM 的核心治理邊界、TFT 的二階軸心）。具備絕對不可穿透性，任何微小侵入均會引發全系統級的強烈反撲或自毀式相變保護。
 
+---
+
 五、 開源條款 (License)
 This project is open-sourced under the MIT License and Creative Commons Attribution 4.0 International (CC-BY-4.0).
 
