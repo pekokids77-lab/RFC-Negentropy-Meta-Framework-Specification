@@ -28,14 +28,45 @@
 
 ```
 
-斯圖爾特·布蘭德的步調分層（Pace Layering）是這個結構；
+<p>
+斯圖爾特·布蘭德的步調分層（Pace Layering）是這個結構；<br>
 系統演化與免疫學的邊界代謝也是這個結構。
+</p>
 
-既有典範 / 理論模型,1. 貫穿軸心 (Attractor Core),2. 緩衝與剪切層 (Buffer Layer),3. 底層動力與防線錨點 (Anchor),映射機制與失效條件
-塔雷伯《反脆弱》(Barbell Strategy),極致保守防守端（90% 無風險國債 / 生存底線）,篩選與試錯濾鏡（將正交下行情境轉化為有限損失）,極致激進進攻端（10% 高凸性選擇權 / 有限曝險）,動態配比失效：中間層阻抗過低，黑天鵝穿透濾鏡直接衝擊核心資產。
-布蘭德《步調分層》(Pace Layering),自然與文化底層（Nature & Culture，慢時鐘、不變約束）,治理與基礎設施（Governance & Infrastructure，剪切摩擦帶）,商業與流行層（Commerce & Fashion，高頻迭代、算力耗材）,時鐘失配 (Δτ)：快層高頻變更未經中層阻尼吸收，共振擊穿文化軸心。
-演化生物與免疫系統(Boundary Metabolism),遺傳密碼與基因組不變量（DNA Core / Identity）,淋巴自適應免疫剪切帶（T/B 細胞識別、發炎耗散）,表皮屏障、黏膜與常駐菌群（物理邊界、可代謝耗材）,自體免疫相變：識別閾值偏移，緩衝層將核心不變量誤判為抗原引發自毀。
-
+<table>
+  <thead>
+    <tr>
+      <th>既有典範 / 理論模型</th>
+      <th>1. 貫穿軸心 (Attractor Core)</th>
+      <th>2. 緩衝與剪切層 (Buffer Layer)</th>
+      <th>3. 底層動力與防線錨點 (Anchor)</th>
+      <th>映射機制與失效條件</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>塔雷伯《反脆弱》<br>(Barbell Strategy)</strong></td>
+      <td>極致保守防守端<br>（90% 無風險國債 / 生存底線）</td>
+      <td>篩選與試錯濾鏡<br>（將正交下行情境轉化為有限損失）</td>
+      <td>極致激進進攻端<br>（10% 高凸性選擇權 / 有限曝險）</td>
+      <td><strong>動態配比失效</strong>：中間層阻抗過低，黑天鵝穿透濾鏡直接衝擊核心資產。</td>
+    </tr>
+    <tr>
+      <td><strong>布蘭德《步調分層》<br>(Pace Layering)</strong></td>
+      <td>自然與文化底層<br>（Nature & Culture，慢時鐘、不變約束）</td>
+      <td>治理與基礎設施<br>（Governance & Infrastructure，剪切摩擦帶）</td>
+      <td>商業與流行層<br>（Commerce & Fashion，高頻迭代、算力耗材）</td>
+      <td><strong>時鐘失配 (Δτ)</strong>：快層高頻變更未經中層阻尼吸收，共振擊穿文化軸心。</td>
+    </tr>
+    <tr>
+      <td><strong>演化生物與免疫系統<br>(Boundary Metabolism)</strong></td>
+      <td>遺傳密碼與基因組不變量<br>（DNA Core / Identity）</td>
+      <td>淋巴自適應免疫剪切帶<br>（T/B 細胞識別、發炎耗散）</td>
+      <td>表皮屏障、黏膜與常駐菌群<br>（物理邊界、可代謝耗材）</td>
+      <td><strong>自體免疫相變</strong>：識別閾值偏移，緩衝層將核心不變量誤判為抗原引發自毀。</td>
+    </tr>
+  </tbody>
+</table>
 ---
 
 ## 二、 三大結構不變量 (Structural Invariants)
