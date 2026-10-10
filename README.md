@@ -4,7 +4,7 @@
 | :--- | :--- |
 | **文件狀態 (Status)** | RFC / Draft Specification |
 | **架構師 (Architect)** | Meridian Lee |
-| **版本號 (Version)** | v0.3.1 |
+| **版本號 (Version)** | v0.4.1 |
 | **開源授權 (License)** | MIT License / CC-BY-4.0 |
 
 ---
