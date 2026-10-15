@@ -29,7 +29,8 @@
 ```
 
 <p>
-斯圖爾特·布蘭德的步調分層（Pace Layering）是這個結構；查爾斯·漢迪的三葉草組織（Shamrock Organization）是這個結構；<br>
+斯圖爾特·布蘭德的步調分層（Pace Layering）是這個結構；
+查爾斯·漢迪的三葉草組織（Shamrock Organization）是這個結構；
 系統演化與免疫學的邊界代謝也是這個結構。
 </p>
 
