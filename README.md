@@ -22,49 +22,6 @@ Plaintext
 │ 宏觀基建 (Commons)│ 非營運法定資產核心 (Non-Operator)│ 責任隔離與空間/熱能解耦沙盒    │ 模組化動產殘值 / 雙軌流動準備 │
 └─────────────────┴───────────────────────────────┴───────────────────────────────┴───────────────────────────────┘
 
----
-
-<p>
-斯圖爾特·布蘭德的步調分層（Pace Layering）是這個結構；
-查爾斯·漢迪的三葉草組織（Shamrock Organization）是這個結構；
-系統演化與免疫學的邊界代謝也是這個結構。
-</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>既有典範 / 理論模型</th>
-      <th>1. 貫穿軸心 (Attractor Core)</th>
-      <th>2. 緩衝與剪切層 (Buffer Layer)</th>
-      <th>3. 底層動力與防線錨點 (Anchor)</th>
-      <th>映射機制與失效條件</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>塔雷伯《反脆弱》<br>(Barbell Strategy)</strong></td>
-      <td>極致保守防守端<br>（90% 無風險國債 / 生存底線）</td>
-      <td>篩選與試錯濾鏡<br>（將正交下行情境轉化為有限損失）</td>
-      <td>極致激進進攻端<br>（10% 高凸性選擇權 / 有限曝險）</td>
-      <td><strong>動態配比失效</strong>：中間層阻抗過低，黑天鵝穿透濾鏡直接衝擊核心資產。</td>
-    </tr>
-    <tr>
-      <td><strong>布蘭德《步調分層》<br>(Pace Layering)</strong></td>
-      <td>自然與文化底層<br>（Nature & Culture，慢時鐘、不變約束）</td>
-      <td>治理與基礎設施<br>（Governance & Infrastructure，剪切摩擦帶）</td>
-      <td>商業與流行層<br>（Commerce & Fashion，高頻迭代、算力耗材）</td>
-      <td><strong>時鐘失配 (Δτ)</strong>：快層高頻變更未經中層阻尼吸收，共振擊穿文化軸心。</td>
-    </tr>
-    <tr>
-      <td><strong>演化生物與免疫系統<br>(Boundary Metabolism)</strong></td>
-      <td>遺傳密碼與基因組不變量<br>（DNA Core / Identity）</td>
-      <td>淋巴自適應免疫剪切帶<br>（T/B 細胞識別、發炎耗散）</td>
-      <td>表皮屏障、黏膜與常駐菌群<br>（物理邊界、可代謝耗材）</td>
-      <td><strong>自體免疫相變</strong>：識別閾值偏移，緩衝層將核心不變量誤判為抗原引發自毀。</td>
-    </tr>
-  </tbody>
-</table>
----
 
 二、 三大結構不變量 (Structural Invariants)
 任何符合本架構之自適應系統，在拓撲上必須存在以下三個同心連通域：
@@ -121,6 +78,51 @@ Plaintext
 E（容許態 / Tolerant）：遭遇衝擊時優先熔斷、降級或切除，系統無反動量，視為常態代謝。
 B（調適態 / Adaptive）：動態吸收切應力，隨環境反饋即時調節流通阻抗，維持核心輸入頻寬穩定。
 C（剛性態 / Rigid）：任何穿透至核心的微小擾動均視為系統性威脅，將強制觸發全域隔離與防禦響應。
+
+---
+
+<p>
+斯圖爾特·布蘭德的步調分層（Pace Layering）是這個結構；
+查爾斯·漢迪的三葉草組織（Shamrock Organization）是這個結構；
+系統演化與免疫學的邊界代謝也是這個結構。
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>既有典範 / 理論模型</th>
+      <th>1. 貫穿軸心 (Attractor Core)</th>
+      <th>2. 緩衝與剪切層 (Buffer Layer)</th>
+      <th>3. 底層動力與防線錨點 (Anchor)</th>
+      <th>映射機制與失效條件</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>塔雷伯《反脆弱》<br>(Barbell Strategy)</strong></td>
+      <td>極致保守防守端<br>（90% 無風險國債 / 生存底線）</td>
+      <td>篩選與試錯濾鏡<br>（將正交下行情境轉化為有限損失）</td>
+      <td>極致激進進攻端<br>（10% 高凸性選擇權 / 有限曝險）</td>
+      <td><strong>動態配比失效</strong>：中間層阻抗過低，黑天鵝穿透濾鏡直接衝擊核心資產。</td>
+    </tr>
+    <tr>
+      <td><strong>布蘭德《步調分層》<br>(Pace Layering)</strong></td>
+      <td>自然與文化底層<br>（Nature & Culture，慢時鐘、不變約束）</td>
+      <td>治理與基礎設施<br>（Governance & Infrastructure，剪切摩擦帶）</td>
+      <td>商業與流行層<br>（Commerce & Fashion，高頻迭代、算力耗材）</td>
+      <td><strong>時鐘失配 (Δτ)</strong>：快層高頻變更未經中層阻尼吸收，共振擊穿文化軸心。</td>
+    </tr>
+    <tr>
+      <td><strong>演化生物與免疫系統<br>(Boundary Metabolism)</strong></td>
+      <td>遺傳密碼與基因組不變量<br>（DNA Core / Identity）</td>
+      <td>淋巴自適應免疫剪切帶<br>（T/B 細胞識別、發炎耗散）</td>
+      <td>表皮屏障、黏膜與常駐菌群<br>（物理邊界、可代謝耗材）</td>
+      <td><strong>自體免疫相變</strong>：識別閾值偏移，緩衝層將核心不變量誤判為抗原引發自毀。</td>
+    </tr>
+  </tbody>
+</table>
+---
+
 五、 開源條款 (License)
 本規範遵循 MIT License 與 CC-BY-4.0 授權條款開源。任何人皆可在保留原作者署名與授權協議的前提下，自由使用、修改、分發或商業化本架構規範。
 
