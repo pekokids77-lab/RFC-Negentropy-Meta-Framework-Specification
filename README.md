@@ -1,11 +1,30 @@
-# RFC-0001: 自適應系統拓撲邊界與抗熵控制標準規範
-### Topological Boundary and Negentropy Control Specification for Adaptive Systems
+# RFC-0001: 跨尺度邊界隔離與動態代償拓撲規範
+### Topological Boundary Isolation and Dynamic Compensatory Specification
 
-> **【標準範疇聲明】**  
-> 本規範為一套形式化的系統邊界控制標準（Formal Boundary Control Specification）。旨在定義跨尺度自適應實體（心智認知、組織協同、實體基建）在維持負熵穩態時，所必須遵循的三同心不變量幾何約束、阻抗梯度公理與斷尾熔斷狀態機，不涉及單一場域的特定操作流程。
+> **【標準範疇與本體論邊界宣告 (Scope & World 3 Ontology)】**
+> 1. **非客觀物理律 (Non-World 1)**：本規範不探討實體宇宙的物質自然律，亦不保證消除下游物理環境之不可抗力。
+> 2. **非主觀心靈學 (Non-World 2)**：本規範不處理不可形式化之個體情緒、直覺或主觀經驗。
+> 3. **客觀符號系統規範 (World 3 Boundary)**：本規範為一套純粹運作於符號、拓撲協議、治理規則與制度架構之**形式化邊界控制標準 (Formal Boundary Control Specification)**。核心在於定義跨尺度自適應實體在維持負熵穩態時，所必須遵循的三同心不變量幾何約束、阻抗梯度公理與斷尾熔斷狀態機。
 
-* **架構師 (Architect)**：Meridian Lee  
-* **授權協議**：MIT License / CC-BY-4.0  
+* **架構師 (Architect)**：Meridian Lee
+* **授權協議**：MIT License / CC-BY-4.0
+
+---
+
+### 0.1 觀測參考系與關係本體論聲明 (Relational Relativity of Invariants)
+本規範所定義之三大同心連通域（$\mathcal{C}, \mathcal{B}, \mathcal{E}$）並非客觀獨立之實體論劃分，而是依據「特定觀測視角與系統邊界協議」所定義之相對拓撲坐標：
+1. 核心（$\mathcal{C}$）之剛性僅相對於其所承載之特定不變量有效；在宏觀網絡中，該節點得被重新映射為更高尺度系統之緩衝層（$\mathcal{B}$）或消耗帶（$\mathcal{E}$）。
+2. 本架構不假設任何節點具備絕對獨立之自足性；所有自適應穩態均依賴節點與其外部網絡之通量交換與邊界協議維持。
+
+### 0.2 工具主義與制度容錯協定 (Instrumental Protocol & Slack Exploitation)
+本規範為一套「跨界面拓撲控制協議（Inter-boundary Control Protocol）」，非形上學真理亦非普世自然律描述：
+1. 評估本規範之唯一標準為「跨尺度系統實作之語意相容性與邊界控制有效性」，而非客觀唯一真理之符合度。
+2. 系統對於下游法律、人為制度與合約界面之映射，旨在利用人為共識系統之「制度容錯空間（Institutional Slack）」建立背靠背風險隔離，其有效性取決於協議能否維持穩態做功，不保證消除下游環境之不可抗力。
+
+### 0.3 邊界破裂與外源負熵依賴 (State Transition & External Dependency)
+本規範所稱之「抗熵控制」嚴格受限於各層級之阻抗容許閾值內：
+1. 本架構不主張全域無條件自癒（Global Asymptotic Stability）。當外部通量超越緩衝層極限或內部相角發生極限正交鎖死時，系統內部自反饋控制律將進入奇異點或失效態。
+2. 系統解除鎖死或重構消耗帶之能力，嚴格依賴更高維度系統或外源負熵之介入；單一閉環實體在超越相變臨界後，不具備封閉自發降熵之保證。
 
 ---
 
@@ -29,46 +48,22 @@
 ```
 
 
-二、 三大結構不變量 (Structural Invariants)
-任何符合本架構之自適應系統，在拓撲上必須存在以下三個同心連通域：
-1. 核心不變域 (Invariant Core, C)
-幾何特徵：系統拓撲幾何的唯一奇異收斂點，不可直接暴露於未經濾波的外部環境。
-語意關係（約束與不變量）：
-定義系統邊界內部的最小不變量（身份、法理產權、元協議約束）。
-路徑遮蔽約束：外部環境與核心之間禁止存在直連路徑：
-$$\text{Path}(Env, \mathcal{C}) \cap \mathcal{B} \neq \emptyset$$
-具備不可穿透的剛性；核心一旦遭受侵入，將引發全系統的邊界失效或自毀。
-2. 剪切緩衝層 (Shear Buffer, B)
-幾何特徵：介於核心不變域與外部環境之間的封閉邊界曲面（動態流形）。
-語意關係（映射與轉換）：
-應力投影轉換：將環境產生的正交破壞力（法向應力）轉換為沿著邊界滑動的切向動量：
-$$\text{Transform}: \text{Stress}_{\perp} \longrightarrow \text{Momentum}_{\parallel}$$
-頻寬控制：中介並濾除環境的高頻噪音，根據內部誤差動態調諧邊界厚度與剛性，向核心輸出語義保真的低熵訊號。
-3. 耗散消耗帶 (Sacrificial Edge, E)
-幾何特徵：可拆卸、可替換的外圍網格邊緣。
-語意關係（生命週期與責任隔離）：
-作為與環境直接摩擦的第一道物理介面。
-可代謝約束：當環境通量超越緩衝層處理上限時，該區域允許被即時熔斷與切除，其結構解體不影響 C 的幾何完整性。
-三、 動態演化律與狀態轉換 (Dynamic Laws)
-1. 動態相差 (Dynamic Phase Difference, )
-定義：核心的長週期演化時鐘（宏觀穩定）與邊緣的高頻反饋時鐘（微觀擾動）之間的時間尺度差。
-語意關係：
-核心維持極低的演化頻率以保證結構不變量不漂移。
-消耗帶以極高的周轉頻率適應即時環境。
-緩衝層必須承載兩者之間的時鐘差與剪切摩擦，避免引發相位共振導致的系統解體。
-2. 斷尾熔斷協議 (Decapitation Protocol)
-觸發前置條件 (Pre-condition)： 當外部應力流入率超越緩衝層的即時耗散極限時：
+二、 三大結構不變量 (Structural Invariants)   任何符合本架構之自適應系統，在拓撲上必須存在以下三個同心連通域：   
 
+*1. 核心不變域 (Invariant Core, $\mathcal{C}$)   幾何特徵：系統拓撲幾何的唯一奇異收斂點，不可直接暴露於未經濾波的外部環境。語意關係（約束與不變量）：定義系統邊界內部的最小不變量（身份、法理產權、元協議約束）。路徑遮蔽約束：外部環境與核心之間禁止存在直連路徑：$$\text{Path}(\text{Env}, \mathcal{C}) \cap \mathcal{B} \neq \emptyset$$具備不可穿透的剛性；核心一旦遭受侵入，將引發全系統的邊界失效或自毀。
+**2. 剪切緩衝層 (Shear Buffer, $\mathcal{B}$)幾何特徵：介於核心不變域與外部環境之間的封閉邊界曲面（動態流形）。語意關係（映射與轉換）：應力投影轉換：將環境產生的正交破壞力（法向應力）轉換為沿著邊界滑動的切向動量：$$\text{Transform}: \text{Stress}_{\perp} \longrightarrow \text{Momentum}_{\parallel}$$頻寬控制：中介並濾除環境的高頻噪音，根據內部誤差動態調諧邊界厚度與剛性，向核心輸出語義保真的低熵訊號。
+**3. 耗散消耗帶 (Sacrificial Edge, $\mathcal{E}$)幾何特徵：可拆卸、可替換的外圍網格邊緣。語意關係（生命週期與責任隔離）：作為與環境直接摩擦的第一道物理與符號介面。可代謝約束：當環境通量超越緩衝層處理上限時，該區域允許被即時熔斷與切除，其結構解體不影響 $\mathcal{C}$ 的幾何完整性。
 
-FluxRate(EnvB)>Capacity(B)
-狀態轉換狀態機 (State Machine)：
-隔離 (Sever)：強制切斷 E 與 B 之間的能量與責任流通。
-核心凍結 (Core Freeze)：核心 C 進入封閉無狀態模式，終止對外 I/O。
-重構掛載 (Re-docking)：於環境應力回落後，在安全條件下重新生成消耗帶 E'。
-四、 阻抗梯度公理 (Impedance Gradient Axiom)
-自適應系統的防禦強度遵循嚴格的偏序關係：
+**三、 動態演化律與狀態轉換 (Dynamic Laws)1. 動態相差 (Dynamic Phase Difference, $\Delta \Phi$)定義：核心的長週期演化時鐘（宏觀穩定）與邊緣的高頻反饋時鐘（微觀擾動）之間的時間尺度差。語意關係：
+**核心 $\mathcal{C}$ 維持極低的演化頻率以保證結構不變量不漂移。
+**消耗帶 $\mathcal{E}$ 以極高的周轉頻率適應即時環境。
+**緩衝層 $\mathcal{B}$ 必須承載兩者之間的時鐘差與剪切摩擦，避免引發相位共振導致系統解體。
+
+**2. 斷尾熔斷協議 (Decapitation Protocol)觸發前置條件 (Pre-condition)：
+當外部應力流入率超越緩衝層的即時耗散極限時：$$\text{FluxRate}(\text{Env} \to \mathcal{B}) > \text{Capacity}(\mathcal{B})$$狀態轉換狀態機 (State Machine)：隔離 (Sever)：強制切斷 $\mathcal{E}$ 與 $\mathcal{B}$ 之間的能量、流動與法理責任流通。核心凍結 (Core Freeze)：核心 $\mathcal{C}$ 進入封閉無狀態模式，終止對外 I/O。重構掛載 (Re-docking)：環境應力回落後，依賴外源負熵注入或母系統安全訊號重啟，在受控環境下重新生成消耗帶 $\mathcal{E}'$。
 
 Impedance(C)Impedance(B)Impedance(E)
+
 Plaintext
 [外部環境擾動 / 正交應力]
 
