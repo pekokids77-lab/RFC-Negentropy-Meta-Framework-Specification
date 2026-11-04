@@ -48,21 +48,59 @@
 ```
 
 
-二、 三大結構不變量 (Structural Invariants)   任何符合本架構之自適應系統，在拓撲上必須存在以下三個同心連通域：   
+## 二、 三大結構不變量 (Structural Invariants)
 
-*1. 核心不變域 (Invariant Core, $\mathcal{C}$)   幾何特徵：系統拓撲幾何的唯一奇異收斂點，不可直接暴露於未經濾波的外部環境。語意關係（約束與不變量）：定義系統邊界內部的最小不變量（身份、法理產權、元協議約束）。路徑遮蔽約束：外部環境與核心之間禁止存在直連路徑：$$\text{Path}(\text{Env}, \mathcal{C}) \cap \mathcal{B} \neq \emptyset$$具備不可穿透的剛性；核心一旦遭受侵入，將引發全系統的邊界失效或自毀。
-**2. 剪切緩衝層 (Shear Buffer, $\mathcal{B}$)幾何特徵：介於核心不變域與外部環境之間的封閉邊界曲面（動態流形）。語意關係（映射與轉換）：應力投影轉換：將環境產生的正交破壞力（法向應力）轉換為沿著邊界滑動的切向動量：$$\text{Transform}: \text{Stress}_{\perp} \longrightarrow \text{Momentum}_{\parallel}$$頻寬控制：中介並濾除環境的高頻噪音，根據內部誤差動態調諧邊界厚度與剛性，向核心輸出語義保真的低熵訊號。
-**3. 耗散消耗帶 (Sacrificial Edge, $\mathcal{E}$)幾何特徵：可拆卸、可替換的外圍網格邊緣。語意關係（生命週期與責任隔離）：作為與環境直接摩擦的第一道物理與符號介面。可代謝約束：當環境通量超越緩衝層處理上限時，該區域允許被即時熔斷與切除，其結構解體不影響 $\mathcal{C}$ 的幾何完整性。
+任何符合本架構之自適應系統，在拓撲上必須存在以下三個同心連通域：
 
-**三、 動態演化律與狀態轉換 (Dynamic Laws)1. 動態相差 (Dynamic Phase Difference, $\Delta \Phi$)定義：核心的長週期演化時鐘（宏觀穩定）與邊緣的高頻反饋時鐘（微觀擾動）之間的時間尺度差。語意關係：
-**核心 $\mathcal{C}$ 維持極低的演化頻率以保證結構不變量不漂移。
-**消耗帶 $\mathcal{E}$ 以極高的周轉頻率適應即時環境。
-**緩衝層 $\mathcal{B}$ 必須承載兩者之間的時鐘差與剪切摩擦，避免引發相位共振導致系統解體。
+### 1. 核心不變域 (Invariant Core, $\mathcal{C}$)
+* **幾何特徵**：系統拓撲幾何的唯一奇異收斂點，不可直接暴露於未經濾波的外部環境。
+* **語意關係（約束與不變量）**：
+  * 定義系統邊界內部的最小不變量（身份、法理產權、元協議約束）。
+  * **路徑遮蔽約束**：外部環境與核心之間禁止存在直連路徑：
+    $$\text{Path}(\text{Env}, \mathcal{C}) \cap \mathcal{B} \neq \emptyset$$
+  * 具備不可穿透的剛性；核心一旦遭受侵入，將引發全系統的邊界失效或自毀。
 
-**2. 斷尾熔斷協議 (Decapitation Protocol)觸發前置條件 (Pre-condition)：
-當外部應力流入率超越緩衝層的即時耗散極限時：$$\text{FluxRate}(\text{Env} \to \mathcal{B}) > \text{Capacity}(\mathcal{B})$$狀態轉換狀態機 (State Machine)：隔離 (Sever)：強制切斷 $\mathcal{E}$ 與 $\mathcal{B}$ 之間的能量、流動與法理責任流通。核心凍結 (Core Freeze)：核心 $\mathcal{C}$ 進入封閉無狀態模式，終止對外 I/O。重構掛載 (Re-docking)：環境應力回落後，依賴外源負熵注入或母系統安全訊號重啟，在受控環境下重新生成消耗帶 $\mathcal{E}'$。
+### 2. 剪切緩衝層 (Shear Buffer, $\mathcal{B}$)
+* **幾何特徵**：介於核心不變域與外部環境之間的封閉邊界曲面（動態流形）。
+* **語意關係（映射與轉換）**：
+  * **應力投影轉換**：將環境產生的正交破壞力（法向應力）轉換為沿著邊界滑動的切向動量：
+    $$\text{Transform}: \text{Stress}_{\perp} \longrightarrow \text{Momentum}_{\parallel}$$
+  * **頻寬控制**：中介並濾除環境的高頻噪音，根據內部誤差動態調諧邊界厚度與剛性，向核心輸出語義保真的低熵訊號。
 
-Impedance(C)Impedance(B)Impedance(E)
+### 3. 耗散消耗帶 (Sacrificial Edge, $\mathcal{E}$)
+* **幾何特徵**：可拆卸、可替換的外圍網格邊緣。
+* **語意關係（生命週期與責任隔離）**：
+  * 作為與環境直接摩擦的第一道物理與符號介面。
+  * **可代謝約束**：當環境通量超越緩衝層處理上限時，該區域允許被即時熔斷與切除，其結構解體不影響 $\mathcal{C}$ 的幾何完整性。
+
+---
+
+## 三、 動態演化律與狀態轉換 (Dynamic Laws)
+
+### 1. 動態相差 (Dynamic Phase Difference, $\Delta\Phi$)
+* **定義**：核心的長週期演化時鐘（宏觀穩定）與邊緣的高頻反饋時鐘（微觀擾動）之間的時間尺度差。
+* **語意關係**：
+  * 核心 $\mathcal{C}$ 維持極低的演化頻率以保證結構不變量不漂移。
+  * 消耗帶 $\mathcal{E}$ 以極高的周轉頻率適應即時環境。
+  * 緩衝層 $\mathcal{B}$ 必須承載兩者之間的時鐘差與剪切摩擦，避免引發相位共振導致系統解體。
+
+### 2. 斷尾熔斷協議 (Decapitation Protocol)
+* **觸發前置條件 (Pre-condition)**：  
+  當外部應力流入率超越緩衝層的即時耗散極限時：
+  $$\text{FluxRate}(\text{Env} \to \mathcal{B}) > \text{Capacity}(\mathcal{B})$$
+* **狀態轉換狀態機 (State Machine)**：
+  1. **隔離 (Sever)**：強制切斷 $\mathcal{E}$ 與 $\mathcal{B}$ 之間的能量、流動與法理責任流通。
+  2. **核心凍結 (Core Freeze)**：核心 $\mathcal{C}$ 進入封閉無狀態模式，終止對外 I/O。
+  3. **重構掛載 (Re-docking)**：環境應力回落後，依賴外源負熵注入或母系統安全訊號重啟，在受控環境下重新生成消耗帶 $\mathcal{E}'$。
+
+---
+
+## 四、 阻抗梯度公理 (Impedance Gradient Axiom)
+
+自適應系統的防禦強度遵循嚴格的偏序關係：
+
+$$\text{Impedance}(\mathcal{C}) > \text{Impedance}(\mathcal{B}) > \text{Impedance}(\mathcal{E})$$
+
 
 Plaintext
 [外部環境擾動 / 正交應力]
